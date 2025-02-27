@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cuestionario TES</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        font-size: 16px; /* Tamaño base de la fuente */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Standard */
+    }
+    h1 {
+        text-align: center;
+        color: #FF4500; /* Color naranja para el título */
+        font-size: 36px; /* Tamaño de fuente más grande para el título */
+        font-weight: bold;
+        text-shadow: 2px 2px #FFD700; /* Sombra para el título */
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        word-wrap: break-word; /* Ajusta el texto largo */
+        word-break: break-word; /* Ajusta el texto largo */
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    .question p {
+        font-size: 1.1rem; /* Tamaño de fuente uniforme */
+        font-weight: bold;
+        color: #6582BC; /* Azul cielo oscuro */
+    }
+    .question label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1rem; /* Tamaño de fuente ajustado */
+        cursor: pointer;
+    }
+    #submitBtn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    #submitBtn:hover {
+        background-color: #45a049;
+    }
+    .score {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* Aumentar ligeramente el tamaño de fuente para pantallas más pequeñas (móviles) */
+    @media (max-width: 600px) {
+        .question p {
+            font-size: 1.25rem; /* Ajusta el tamaño de la fuente en móviles */
+        }
+        body {
+            font-size: 1.1rem; /* Ajuste global para móviles */
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cuestionario de Primeros Auxilios Básicos para Conductores</h1>
+
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cuál es la primera acción que debe realizar un conductor al llegar al lugar de un accidente de tráfico?</p>
+            <label><input type="radio" name="q1" value="a"> Comenzar a atender a los heridos inmediatamente.</label>
+            <label><input type="radio" name="q1" value="b"> Asegurar la escena para evitar más accidentes.</label>
+            <label><input type="radio" name="q1" value="c"> Llamar a emergencias y proporcionar información precisa sobre el lugar y el número de heridos.</label>
+            <label><input type="radio" name="q1" value="d"> Tomar fotos del accidente para la policía.</label>
+            <label><input type="radio" name="q1" value="e"> Mover los vehículos involucrados para despejar la vía.</label>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿Qué debe hacer si encuentra a una persona inconsciente pero respirando después de un accidente de tráfico?</p>
+            <label><input type="radio" name="q2" value="a"> Dejarla en el suelo y esperar a que llegue la ambulancia.</label>
+            <label><input type="radio" name="q2" value="b"> Colocarla en posición lateral de seguridad.</label>
+            <label><input type="radio" name="q2" value="c"> Darle agua para rehidratarla.</label>
+            <label><input type="radio" name="q2" value="d"> Moverla rápidamente a un lugar más seguro.</label>
+            <label><input type="radio" name="q2" value="e"> Realizar compresiones torácicas.</label>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Cuál es la forma correcta de actuar ante una hemorragia severa en una extremidad?</p>
+            <label><input type="radio" name="q3" value="a"> Aplicar un torniquete como primera medida.</label>
+            <label><input type="radio" name="q3" value="b"> Presionar directamente sobre la herida con un paño limpio.</label>
+            <label><input type="radio" name="q3" value="c"> Elevar la extremidad y aplicar hielo.</label>
+            <label><input type="radio" name="q3" value="d"> Dejar que la herida sangre para limpiarse.</label>
+            <label><input type="radio" name="q3" value="e"> Cubrir la herida con una gasa sin presionar.</label>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Qué debe hacer si un pasajero sufre una quemadura leve en un accidente de tráfico?</p>
+            <label><input type="radio" name="q4" value="a"> Aplicar crema o pomada sobre la quemadura.</label>
+            <label><input type="radio" name="q4" value="b"> Enfriar la quemadura con agua fría durante al menos 10 minutos.</label>
+            <label><input type="radio" name="q4" value="c"> Cubrir la quemadura con hielo directamente.</label>
+            <label><input type="radio" name="q4" value="d"> Dejar la quemadura al aire para que se seque.</label>
+            <label><input type="radio" name="q4" value="e"> Aplicar alcohol sobre la quemadura.</label>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿Cuál es la forma correcta de actuar ante una persona que ha sufrido un traumatismo craneal en un accidente de tráfico?</p>
+            <label><input type="radio" name="q5" value="a"> Moverla rápidamente para evitar que pierda el conocimiento.</label>
+            <label><input type="radio" name="q5" value="b"> Inmovilizar el cuello y la cabeza y llamar a emergencias.</label>
+            <label><input type="radio" name="q5" value="c"> Darle de beber algo dulce para evitar un shock.</label>
+            <label><input type="radio" name="q5" value="d"> Dejarla sola hasta que llegue la ambulancia.</label>
+            <label><input type="radio" name="q5" value="e"> Realizar compresiones torácicas.</label>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. ¿Qué debe hacer si un herido en un accidente de tráfico presenta signos de shock hipovolémico?</p>
+            <label><input type="radio" name="q6" value="a"> Darle líquidos para rehidratarlo.</label>
+            <label><input type="radio" name="q6" value="b"> Mantenerlo abrigado y en posición de shock (piernas elevadas).</label>
+            <label><input type="radio" name="q6" value="c"> Moverlo rápidamente a un hospital.</label>
+            <label><input type="radio" name="q6" value="d"> Dejarlo en el suelo sin moverlo.</label>
+            <label><input type="radio" name="q6" value="e"> Realizar compresiones torácicas.</label>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. ¿Cuál es la forma correcta de actuar ante una fractura abierta en un accidente de tráfico?</p>
+            <label><input type="radio" name="q7" value="a"> Intentar recolocar el hueso en su lugar.</label>
+            <label><input type="radio" name="q7" value="b"> Cubrir la herida con un paño limpio y inmovilizar la extremidad.</label>
+            <label><input type="radio" name="q7" value="c"> Aplicar hielo directamente sobre la fractura.</label>
+            <label><input type="radio" name="q7" value="d"> Dejar la herida al aire para que se seque.</label>
+            <label><input type="radio" name="q7" value="e"> Mover la extremidad para comprobar la movilidad.</label>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. ¿Qué debe hacer si un herido en un accidente de tráfico tiene un objeto clavado en el cuerpo?</p>
+            <label><input type="radio" name="q8" value="a"> Retirar el objeto rápidamente para evitar más daños.</label>
+            <label><input type="radio" name="q8" value="b"> Inmovilizar el objeto y no retirarlo.</label>
+            <label><input type="radio" name="q8" value="c"> Aplicar presión alrededor del objeto para detener el sangrado.</label>
+            <label><input type="radio" name="q8" value="d"> Dejar el objeto y no hacer nada hasta que llegue la ambulancia.</label>
+            <label><input type="radio" name="q8" value="e"> Mover al herido para llevarlo al hospital.</label>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p>9. ¿Cuál es la forma correcta de actuar ante una persona que ha sufrido una electrocución en un accidente de tráfico?</p>
+            <label><input type="radio" name="q9" value="a"> Tocar a la persona para separarla de la fuente eléctrica.</label>
+            <label><input type="radio" name="q9" value="b"> Cortar la corriente eléctrica antes de tocar a la persona.</label>
+            <label><input type="radio" name="q9" value="c"> Mover a la persona rápidamente para evitar más daños.</label>
+            <label><input type="radio" name="q9" value="d"> Dejar a la persona sola hasta que llegue la ambulancia.</label>
+            <label><input type="radio" name="q9" value="e"> Aplicar agua fría sobre la zona afectada.</label>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. ¿Qué debe hacer si un herido en un accidente de tráfico presenta dificultad para respirar?</p>
+            <label><input type="radio" name="q10" value="a"> Colocarlo en posición sentada.</label>
+            <label><input type="radio" name="q10" value="b"> Colocarlo en posición lateral de seguridad.</label>
+            <label><input type="radio" name="q10" value="c"> Realizar compresiones torácicas.</label>
+            <label><input type="radio" name="q10" value="d"> Darle agua para rehidratarlo.</label>
+            <label><input type="radio" name="q10" value="e"> Dejarlo en el suelo sin moverlo.</label>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <p>11. ¿Cuál es la forma correcta de actuar ante una persona que ha sufrido una intoxicación por monóxido de carbono en un accidente de tráfico?</p>
+            <label><input type="radio" name="q11" value="a"> Darle líquidos para rehidratarlo.</label>
+            <label><input type="radio" name="q11" value="b"> Sacar a la persona al aire libre y llamar a emergencias.</label>
+            <label><input type="radio" name="q11" value="c"> Realizar compresiones torácicas.</label>
+            <label><input type="radio" name="q11" value="d"> Dejarla en el vehículo hasta que llegue la ambulancia.</label>
+            <label><input type="radio" name="q11" value="e"> Aplicar hielo sobre la cabeza.</label>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <p>12. ¿Qué debe hacer si un herido en un accidente de tráfico presenta convulsiones?</p>
+            <label><input type="radio" name="q12" value="a"> Sujetar a la persona para evitar que se mueva.</label>
+            <label><input type="radio" name="q12" value="b"> Colocar un objeto en la boca para evitar que se muerda la lengua.</label>
+            <label><input type="radio" name="q12" value="c"> Proteger a la persona de golpes y no introducir nada en su boca.</label>
+            <label><input type="radio" name="q12" value="d"> Darle agua para rehidratarlo.</label>
+            <label><input type="radio" name="q12" value="e"> Mover a la persona rápidamente para evitar más daños.</label>
+        </div>
+
+        <div id="score" class="score"></div>
+        <button type="button" id="submitBtn" onclick="calcularCalificacion()">Corregir</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    function calcularCalificacion() {
+        let respuestasCorrectas = {
+            "q1": "b",
+            "q2": "b",
+            "q3": "b",
+            "q4": "b",
+            "q5": "b",
+            "q6": "b",
+            "q7": "b",
+            "q8": "b",
+            "q9": "b",
+            "q10": "b",
+            "q11": "b",
+            "q12": "c"
+        };
+
+        let totalPreguntas = 12;
+        let puntaje = 0;
+
+        for (let pregunta in respuestasCorrectas) {
+            let seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+            if (seleccionada && seleccionada.value === respuestasCorrectas[pregunta]) {
+                puntaje++;
+            }
+        }
+
+        let resultado = `Has obtenido ${puntaje} de ${totalPreguntas}`;
+        document.getElementById("score").innerText = resultado;
+    }
+</script>
+
+<footer>
+    <p>Elaborado por Eloy Díaz</p>
+    <p>Advertencia: Este documento es para uso educativo y no debe ser distribuido sin permiso.</p>
+</footer>
+</body>
+</html>
